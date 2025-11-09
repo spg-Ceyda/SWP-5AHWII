@@ -4,11 +4,8 @@ const prisma = new PrismaClient();
 
 async function main() {
 
-    // Zuerst abhängige Tabellen löschen
 await prisma.question.deleteMany();
 await prisma.answer.deleteMany();
-
-// Dann Parent-Tables löschen
 await prisma.difficulty.deleteMany();
 await prisma.category.deleteMany();
 await prisma.type.deleteMany();
