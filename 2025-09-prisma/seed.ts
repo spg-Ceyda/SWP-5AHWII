@@ -60,9 +60,9 @@ await prisma.type.deleteMany();
 }
 try {
     await main();
-    console.log("Daten erfolgreich eingefügt");
+    console.log("Daten erfolgreich eingefügt.");
 } catch (err) {
-    console.error("Fehler beim Einfügen", err);
+    console.error("Fehler beim Einfügen.", err);
 } finally {
     await prisma.$disconnect();
 }
