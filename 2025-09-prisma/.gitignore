@@ -1,0 +1,6 @@
+**/client/
+**/*.db
+.env
+Prisma client / generated code
+prisma/client/
+prisma/generated/
